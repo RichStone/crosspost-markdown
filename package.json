@@ -1,0 +1,38 @@
+{
+  "name": "crossposter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "crosspost": "./index.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "CLI",
+    "Webflow",
+    "Cross Post",
+    "Blog",
+    "dev.to"
+  ],
+  "author": "Rich Stone",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "clui": "^0.3.6",
+    "commander": "^5.1.0",
+    "configstore": "^5.0.1",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.3.1",
+    "node-html-parser": "^1.2.20",
+    "showdown": "^1.9.1",
+    "slugify": "^1.4.4",
+    "webflow-api": "^0.5.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1"
+  }
+}
