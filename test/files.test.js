@@ -7,9 +7,4 @@ describe ('Files', () => {
     markdown = await files.removeFirstLine(markdown)
     console.log(markdown)
   })
-
-  it('should return the correct crossPost.conf path', () => {
-    const articlePath = '/Users/rich/code/src/github.com/crossposter/test/test.md'
-    expect(files.getCrossPostConfPath(articlePath)).to.equal('/Users/rich/code/src/github.com/crossposter/test/crosspostConf.json')
-  })
 })
