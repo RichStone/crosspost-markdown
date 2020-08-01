@@ -25,6 +25,7 @@
     "commander": "^5.1.0",
     "configstore": "^5.0.1",
     "figlet": "^1.4.0",
+    "get-title-markdown": "^2.0.1",
     "inquirer": "^7.3.1",
     "node-html-parser": "^1.2.20",
     "showdown": "^1.9.1",
