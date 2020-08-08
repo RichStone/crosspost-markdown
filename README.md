@@ -102,3 +102,15 @@ making)
 
 You may also want to add some extra CSS to your blog posts collection, e.g. to
 add some extra top margin on headings (h1, h2, etc.).
+
+### dev.to
+
+As of now, with CrossPost your article will be published as a Draft. You will
+still need to log in and perform some additional configurations, like:
+
+- adding tags
+- adding a header image
+- switching the article from Draft to Published
+
+Please let me know if you'd like us to add more configurations inside CrossPost
+or feel free to issue a Pull Request ;)
