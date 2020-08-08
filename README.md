@@ -22,9 +22,38 @@ guessed it, it's 1 command!
 
 ...
 
-## Usage example
+## Getting Started
 
-...
+If you never used CrossPost before, you'll need to configure it first:
+
+```bash
+crosspost configure
+```
+
+There will be a little interview to set up the connection to the different APIs.
+Visit our step by step tutorials to set yourself up.
+
+Navigate to the directory of your markdown article.
+
+```bash
+cd article/folder
+```
+
+## Need help
+
+If you ever get stuck do this to get an overview over crosspost's capabilities:
+
+```bash
+crosspost help
+```
+
+Or do this to get details about a certain command:
+
+```bash
+crosspost article help
+```
+
+If you really really get stuck, reach out to us on twitter: @fullstackcoach
 
 ## Development setup
 
@@ -32,8 +61,8 @@ guessed it, it's 1 command!
 
 ## Release History
 
-* 1.0.0
-  * Work in progress
+- 1.0.0
+  - Work in progress
 
 ## Contributing
 
@@ -41,12 +70,25 @@ guessed it, it's 1 command!
 
 ## Caveats
 
+- when you post an article with CrossPost, a configuration file gets created in
+the same directory as your article. You'll need to store this file together with
+your posts in order to keep using CrossPost.
 - the integration relies on you keeping to make update to your posts via
-CrossPost. If you start making the changes on your posts directly on the platforms
-(e.g. changes on the contents, slugs etc.) you will most probably encounter inconsistencies.
-- your post has to start with a h1 title ('#'). It's a useful markdownlint convention and CrossPost also relies on it to set the title of the posts correctly.
+CrossPost. If you make changes to your article content inside webflow, CrossPost
+will overwrite them with the contents of your markdown file.
+- your post has to start with a h1 title ('#'). It's a useful markdownlint
+convention and CrossPost also relies on it to set the title of the posts correctly.
+  - titles on webflow and dev.to will be automatically removed from the article
+  body and will be set via the API.
 
 ### webflow
+
+After publishing on webflow for the first time your article will be in Staged
+mode. You will still need to make adjustments like setting your custom fields
+images (integration for that is in the making) and a post summary.
+
+When you update your posts, CrossPost will only update your article body and
+your title (if you changed any of them).
 
 Once your article is on webflow, you might encounter weird behavior inside the
 webflow editor. For example, I can't see the ordered list and unordered list items
@@ -54,7 +96,9 @@ inside the editor, but it displays correctly in the published version. Since you
 want to keep your article writing outside of webflow anyway, it shouldn't be too
 big of a deal.
 
-You will need to add something like prism to enable syntax highlighting.
+You will need to add something like prism to enable syntax highlighting (This
+should not take more than a pomodoro to set up. Step by step tutorial is in the
+making)
 
 You may also want to add some extra CSS to your blog posts collection, e.g. to
 add some extra top margin on headings (h1, h2, etc.).
