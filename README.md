@@ -63,6 +63,8 @@ If you really really get stuck, reach out to us on twitter: @fullstackcoach
 
 - 1.0.0
   - Work in progress
+- 1.1.0
+  - First version: granularly configurable and with Webflow & dev.to integrated
 
 ## Contributing
 
