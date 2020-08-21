@@ -6,6 +6,9 @@ GitHub, Medium & codementor.
 At the moment, with CrossPost you will be able to write your developer article in markdown
 using your favorite editor and automatically push it to webflow and dev.to.
 
+Check out the full tutorial [fullstack.coach](https://fullstack.coach) to get yourself started to write your content in markdown and to configure your top notch
+IWE (Integrated Developer Environment)
+
 So far codementor.io and Medium don't offer an API to create articles, so that
 you'll need to follow a few more manual steps to import your articles there
 (see the complete [fullstack.coach](https://fullstack.coach) blog writing
@@ -22,7 +25,7 @@ Yeah, you've guessed it, 1 command!
 ## Installation
 
 ```bash
-$ npm install -g crosspost
+~ npm install -g crosspost
 ```
 
 ## Getting Started
@@ -30,7 +33,7 @@ $ npm install -g crosspost
 If you never used CrossPost before, you'll need to configure it first:
 
 ```bash
-$ crosspost configure
+~ crosspost configure
 ```
 
 There will be a little interview to set up the connection to the different APIs.
@@ -39,13 +42,13 @@ Visit our step by step tutorial at [fullstack.coach](fullstack.coach) to set you
 Navigate to the directory of your markdown article.
 
 ```bash
-$ cd articles/folder
+~ cd articles/folder
 ```
 
 Push an article to webflow and dev.to in one go:
 
 ```bash
-$ crosspost article your-article.md
+~ crosspost article your-article.md
 ```
 
 ## Need help
@@ -53,20 +56,28 @@ $ crosspost article your-article.md
 If you ever get stuck do this to get an overview over crosspost's capabilities:
 
 ```bash
-$ crosspost help
+~ crosspost --help
 ```
 
 Or do this to get details about a certain command:
 
 ```bash
-$ crosspost article help
+~ crosspost article help
 ```
 
-If you really really get stuck, create an Issue here on GitHub or reach out to me :)
+If you really really get stuck, create an Issue on GitHub or reach out to me :)
 
-## Development setup
+## Contributing
 
-...
+1. Fork the repo
+1. Clone to your local
+1. Do the work
+  To see the impact of your changes on how the tool behaves, you can run the
+  local version of CrossPost like this: `node index.js configure`
+1. Push to your repository
+1. Open a Pull Request
+
+Thank you!
 
 ## Release History
 
@@ -74,50 +85,31 @@ If you really really get stuck, create an Issue here on GitHub or reach out to m
   - Work in progress
 - 1.1.0
   - First version: granularly configurable and with Webflow & dev.to integrated
-
-## Contributing
-
-...
+- 1.1.1
+  Updated the README.md to a workable state
 
 ## Caveats
 
-- when you post an article with CrossPost, a configuration file gets created in
+- When you post an article with CrossPost, a configuration file gets created in
 the same directory as your article. You'll need to store this file together with
 your posts in order to keep using CrossPost because consistency can only be achieved
 if CrossPost knows about the article IDs on the different platforms.
-- the integration relies on you keeping to make update to your posts via
+- The integration relies on you keeping to make update to your posts via
 CrossPost. If you make changes to your article content inside webflow, CrossPost
 will overwrite them with the contents of your markdown file on the next publish.
-- your post has to start with a h1 markdown title ('#'). It's a useful markdownlint
+- Your post has to start with a h1 markdown title ('#'). It's a useful markdownlint
 convention and CrossPost also relies on it to set the title of the posts correctly.
-  - titles on webflow and dev.to will be automatically removed from the article
+  - Titles on webflow and dev.to will be automatically removed from the article
   body and will be set via the API.
 
 ### webflow
 
-You will need to perform a few small steps described over at 
+You will need to perform a few small setup steps described over at
 [fullstack.coach](fullstack.coach) to configure webflow to accept your
-markdown articles (webflow does not work with markdown out of the box!).
+markdown articles (webflow does not work with markdown out of the box).
 
-After publishing on webflow for the first time your article will be in Staged
-mode. You will still need to make adjustments like setting your custom fields
-images (integration for that is in the making) and a post summary.
-
-When you update your posts, CrossPost will only update your article body and
-your title (if you changed any of them).
-
-Once your article is on webflow, you might encounter weird behavior inside the
-webflow editor. For example, I can't see the ordered list and unordered list items
-inside the editor, but it displays correctly in the published version. Since you
-want to keep your article writing outside of webflow anyway, it shouldn't be too
-big of a deal.
-
-You will need to add something like prism to enable syntax highlighting (This
-should not take more than a pomodoro to set up. Step by step tutorial is in the
-making)
-
-You may also want to add some extra CSS to your blog posts collection, e.g. to
-add some extra top margin on headings (h1, h2, etc.).
+Carefully read the Webflow configurations and Caveats sections from [this instructional
+blog post](https://fullstack.coach).
 
 ### dev.to
 
