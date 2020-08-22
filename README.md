@@ -19,6 +19,7 @@ tutorial for the necessary steps).
 - Host your blog in webflow, dev.to and GitHub: write markdown once, push to all
 platforms with a single command! 🚀
 - Want to write your blog in markdown but host in on Webflow? One command! 🚀
+- Keep your markdown between webflow and dev.to in sync. 1 cmd.
 - Want to keep your blog on dev.to, but version control and open source it in GitHub? 
 Yeah, you've guessed it, 1 command!
 
@@ -69,13 +70,19 @@ If you really really get stuck, create an Issue on GitHub or reach out to me :)
 
 ## Contributing
 
-1. Fork the repo
-1. Clone to your local
-1. Do the work
-  To see the impact of your changes on how the tool behaves, you can run the
-  local version of CrossPost like this: `node index.js configure`
-1. Push to your repository
-1. Open a Pull Request
+That's the brute force way, I've just come up with. 
+There is certainly a more elegant way to do that 🙈.
+
+1. Fork this repo
+1. Clone to your local machine
+1. If you have CrossPost already installed from remote NPM
+run `npm uninstall crosspost -g`
+1. `cd into/cloned/repo`
+1. `npm install -g` (will install the local version globally)
+  Now you can do your changes on the source code and see their
+  impact when running `~ crosspost`
+1. Push your changes to your remote repository
+1. Issue a PR towards this repo
 
 Thank you!
 
