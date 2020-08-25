@@ -21,8 +21,8 @@
   ],
   "author": {
     "name": "Richard Steinmetz",
-    "email" : "rich@fullstack.coach",
-    "url" : "https://fullstack.coach"
+    "email": "rich@fullstack.coach",
+    "url": "https://fullstack.coach"
   },
   "license": "MIT",
   "dependencies": {
@@ -43,13 +43,13 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/RichStone/crosspost-markdown.git"
-  },  
+  },
   "bugs": {
-    "url" : "https://github.com/RichStone/crosspost-markdown/issues", 
-    "email" : "rich@fullstack.coach"
+    "url": "https://github.com/RichStone/crosspost-markdown/issues",
+    "email": "rich@fullstack.coach"
   },
   "devDependencies": {
     "chai": "^4.2.0",
-    "mocha": "^8.0.1"
+    "mocha": "^8.1.1"
   }
 }
