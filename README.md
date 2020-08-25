@@ -1,21 +1,22 @@
 # Markdown Blog Integration for Developers
 
-> Write your developer article once in markdown, distribute on webflow, dev.to,
-GitHub, Medium & codementor.
+> Write your developer article in markdown once, publish and sync on webflow,
+dev.to, GitHub, Medium & codementor.
 
 At the moment, with CrossPost you will be able to write your developer article
-in markdown using your favorite editor and automatically push it to webflow and
-dev.to.
+in markdown using your favorite editor and automatically push/update it on
+webflow and dev.to.
 
 Check out the full tutorial
 [fullstack.coach](https://fullstack.coach/post/how-to-write-and-cross-post-your-markdown-content)
 to get yourself started to write your content in markdown and to configure your
-top notch IWE (Integrated Developer Environment)
+top notch IWE (Integrated Writer Environment).
 
 So far codementor.io and Medium don't offer an API to create articles, so that
-you'll need to follow a few more manual steps to import your articles there (see
-the complete [fullstack.coach](https://fullstack.coach) blog writing tutorial
-for the necessary steps).
+you'll need to follow a few more manual steps to import your articles there
+(again, you can see the complete
+[fullstack.coach](https://fullstack.coach/post/how-to-write-and-cross-post-your-markdown-content)
+blog writing tutorial for the necessary steps).
 
 ## Use Cases
 
@@ -34,6 +35,26 @@ for the necessary steps).
 
 ## Getting Started
 
+For now, CrossPost's main purpose is to take a **markdown file** from your local
+file system and **publish it on webflow and dev.to with one command**. After
+installing CrossPost as described above, you can check out all commands by
+running `crosspost` in your terminal. You should encounter something like this
+for CrossPost 1.1.3 version:
+
+```bash
+~ crosspost
+Usage: crosspost [options] [command]
+
+Options:
+  -V, --version                  output the version number
+  -h, --help                     display help for command
+
+Commands:
+  configure [options]            Configure CrossPost
+  article [options] <file_path>  Cross post markdown article 🚀
+  help [command]                 display help for command
+```
+
 If you never used CrossPost before, you'll need to configure it first:
 
 ```bash
@@ -41,8 +62,9 @@ If you never used CrossPost before, you'll need to configure it first:
 ```
 
 There will be a little interview to set up the connection to the different APIs.
-Visit our step by step tutorial at [fullstack.coach](fullstack.coach) to set
-yourself up in more detail.
+Visit our step by step tutorial at
+[fullstack.coach](https://fullstack.coach/post/how-to-write-and-cross-post-your-markdown-content)
+to set yourself up in more detail.
 
 Navigate to the directory of your markdown article.
 
@@ -56,9 +78,16 @@ Push an article to webflow and dev.to in one go:
 ~ crosspost article your-article.md
 ```
 
+You could also just push it to webflow:
+
+```bash
+~ crosspost article your-article.md --to webflow
+```
+
 ## Need help
 
-If you ever get stuck do this to get an overview over crosspost's capabilities:
+If you don't know where to go after installing CrossPost do this to get an
+overview over crosspost's capabilities:
 
 ```bash
 ~ crosspost --help
@@ -67,10 +96,14 @@ If you ever get stuck do this to get an overview over crosspost's capabilities:
 Or do this to get details about a certain command:
 
 ```bash
-~ crosspost article help
+~ crosspost article --help
 ```
 
 If you really really get stuck, create an Issue on GitHub or reach out to me :)
+
+You shouldn't get stuck hopefully though, if you carefully read the full
+documentation post over at
+[fullstack.coach](https://fullstack.coach/post/how-to-write-and-cross-post-your-markdown-content).
 
 ## Contributing
 
